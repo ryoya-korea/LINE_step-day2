@@ -33,23 +33,32 @@
         }
         /* メインの見出し (衝撃の真実) */
         .text-hero-headline {
-            font-size: clamp(2rem, 6vw, 4rem); /* 32px - 64px */
+            font-size: clamp(1rem, 6vw, 4rem); /* 32px - 64px */
         }
+        
+
+        .text-p-small{
+            font-size: clamp(0.75rem, 2vw, 1.125rem); /* 最小が14.4px相当 */
+        }
+        
         /* ヒーローセクションの大きな段落 (こんにちは！韓国語コーチのryoyaです。) */
-        .text-p-large {
-            font-size: clamp(1rem, 2.5vw, 1.25rem); /* 16px - 20px */
-        }
-        /* ヒーローセクションの中程度の段落とリストアイテム */
         .text-p-medium {
-            font-size: clamp(0.9rem, 2vw, 1.125rem); /* 14.4px - 18px */
+            font-size: clamp(0.8rem, 2vw, 1.125rem); /* 最小が14.4px相当 */
         }
-        /* ヒーローセクションの強調された段落 (実はそのモヤモヤ) */
+
+        .text-p-medium {
+            font-size: clamp(0.9rem, 2.5vw, 1.125rem); /* 最小16pxにアップ */
+            line-height: 1.75; /* 行間を広げて可読性アップ */
+        }
+
         .text-hero-emphasized {
-            font-size: clamp(1rem, 2.5vw, 1.25rem); /* 16px - 20px */
+            font-size: clamp(1.1rem, 2.6vw, 1.3rem);
+            line-height: 1.75;
         }
+        
         /* 各理由のセクションタイトル (理由① インプットばかりで「アウトプット」が足りない) */
         .text-section-title {
-            font-size: clamp(1.75rem, 5vw, 3rem); /* 28px - 48px */
+            font-size: clamp(1.4rem, 5vw, 3rem); /* 28px - 48px */
         }
         /* 各理由セクションの強調された段落 (受け身の学びでは) */
         .text-reason-emphasized {
@@ -57,7 +66,7 @@
         }
         /* ソリューションセクションの見出し (じゃあ、どうすればいいの？) */
         .text-solution-headline {
-            font-size: clamp(1.75rem, 5vw, 3rem); /* 28px - 48px */
+            font-size: clamp(1.5rem, 5vw, 3rem); /* 28px - 48px */
         }
         /* ソリューションセクションの結論 (結論はシンプルです。) */
         .text-solution-conclusion {
@@ -65,11 +74,11 @@
         }
         /* ソリューションセクションのメインメッセージ (正しい方向で、3ヶ月だけ本気でやること。) */
         .text-solution-main-message {
-            font-size: clamp(1.5rem, 4.5vw, 2rem); /* 24px - 32px */
+            font-size: clamp(1.7rem, 4.5vw, 2rem); /* 24px - 32px */
         }
         /* 行動喚起のテキスト (コーチング無料体験をご希望の方は) */
         .text-cta-prompt {
-            font-size: clamp(1.25rem, 3vw, 1.5rem); /* 20px - 24px */
+            font-size: clamp(1.2rem, 3vw, 1.5rem); /* 20px - 24px */
         }
         /* 行動喚起のボタンテキスト */
         .text-cta-button {
@@ -98,29 +107,47 @@
         <!-- ヒーロー/イントロダクションセクション -->
         <section class="text-center mb-16">
             <h2 class="text-hero-headline font-extrabold mb-6 leading-tight no-gradient-text">
-                【衝撃の真実】<br>オンラインレッスンでは、絶対に韓国語が「話せるようにならない」3つの理由
+                【衝撃の真実】<br>オンラインレッスンで絶対に<br>韓国語が"話せる"ようにならない<br>3つの理由
             </h2>
-            <p class="text-p-large mb-8">
-                こんにちは！韓国語コーチのryoyaです。
-            </p>
-            <p class="text-p-large mb-8">
-                今回は、多くの学習者が見落としている「オンラインレッスンの落とし穴」についてお話しします。
-            </p>
-            <p class="text-p-medium mb-4">
-                最近は「オンラインで気軽に学べる韓国語レッスン」が増えてきましたよね。
-                でも、こんな風に感じたことはありませんか？
-            </p>
-            <ul class="text-p-medium list-disc list-inside text-left mx-auto max-w-xl space-y-2 mb-8">
-                <li>「なんとなく気になるけど、本当に効果あるのかな？」</li>
-                <li>「受けてみたけど、話せるようになってる気がしない」</li>
-            </ul>
-            <p class="text-p-medium mb-8">
-                そんな不安や違和感を抱えたまま、なんとなく続けていませんか？
-            </p>
-            <p class="text-hero-emphasized font-semibold text-orange-30">
-                実はそのモヤモヤ、あなたのせいではありません。<br>
-                むしろ、多くの人がハマってしまう“構造上の落とし穴”があるんです。
-            </p>
+            <div class="max-w-prose mx-auto px-4">
+
+  <p class="text-p-large mb-6">
+    こんにちは！韓国語コーチのryoyaです。
+  </p>
+
+  <p class="text-p-large mb-6">
+    今回は、多くの学習者が見落としている<br class="md:hidden" />
+    「オンラインレッスンの落とし穴」<br>についてお話しします。
+  </p>
+
+  <p class="text-p-large mb-4">
+    最近は気軽に学べる<br>「韓国語オンラインレッスン」<br>が増えてきましたよね。
+  </p>
+
+  <p class="text-p-medium mb-4">
+    でも、こんな風に感じたことはありませんか？
+  </p>
+
+  <ul class="text-p-small italic bg-[#2E2E44] px-4 py-2 rounded shadow my-6 inline-bloc">
+    <li>「なんとなく気になるけど、本当に効果あるのかな？」</li>
+    <li>「受けてみたけど、話せるようになってる気がしない」</li>
+  </ul>
+
+  <p class="text-p-large mb-6">
+    そんな不安や違和感を抱えたまま、<br class="md:hidden" />
+    なんとなく続けていませんか？
+  </p>
+
+  <p class="text-hero-emphasized mb-3 font-semibold text-orange-300">
+    実はそのモヤモヤ<br>あなたのせいではありません。
+  </p>
+
+  <p class="text-hero-emphasized font-semibold text-orange-300">
+    むしろ、多くの人がハマってしまう<br class="md:hidden" />
+    “構造上の落とし穴”があるんです。
+  </p>
+
+</div>
         </section>
 
         <div class="section-separator"></div>
@@ -128,7 +155,7 @@
         <!-- 理由1セクション -->
         <section class="mb-16 bg-zinc-800 p-8 rounded-lg shadow-xl">
             <h3 class="text-section-title font-bold mb-6 text-orange-30">
-                理由① インプットばかりで「アウトプット」が足りない
+                理由① <br>インプットばかりで<br>"アウトプ"ット"が足りない
             </h3>
             <p class="text-p-medium mb-4">
                 ほとんどのレッスンは、先生の説明を「聞く」時間が中心。
@@ -155,7 +182,7 @@
         <!-- 理由2セクション -->
         <section class="mb-16 bg-zinc-800 p-8 rounded-lg shadow-xl">
             <h3 class="text-section-title font-bold mb-6 text-orange-30">
-                理由② モチベーションに頼って「習慣化」できない
+                理由② <br>モチベーションに頼って<br>"習慣化"できない
             </h3>
             <p class="text-p-medium mb-4">
                 オンラインレッスンは、「今日は受けたからOK」と満足してしまいがち。
@@ -186,7 +213,7 @@
         <!-- 理由3セクション -->
         <section class="mb-16 bg-zinc-800 p-8 rounded-lg shadow-xl">
             <h3 class="text-section-title font-bold mb-6 text-orange-30">
-                理由③ あなただけの「目標」と「戦略」がない
+                理由③ <br>あなただけの<br>「目標」と「戦略」がない
             </h3>
             <p class="text-p-medium mb-4">
                 教科書通りにゆっくり進むレッスン…<br>
@@ -221,16 +248,18 @@
                 結論はシンプルです。
             </p>
             <p class="text-solution-main-message font-extrabold text-red-400 mb-8 leading-tight">
-                正しい方向で、<span class="text-red-400">3ヶ月だけ本気でやること。</span>
+                正しい方向で、<br><span class="text-red-400">3ヶ月だけ本気でやること。</span>
             </p>
-            <p class="text-p-medium mb-8">
+            <p class="text-p-large mb-8">
                 スタート地点や目標は人それぞれでも、<br>
-                この「3ヶ月の集中」ができれば、韓国語は一気に伸びていきます。
+                この「3ヶ月の集中」ができれば<br>韓国語は一気に伸びていきます。
             </p>
             <p class="text-p-medium mb-8">
-                私自身、かつては何度も挫折しました。独学で伸び悩み、遠回りばかりしていた時期もあります。<br>
-                でも、だからこそわかることがある。そして、今なら伝えられることがある。<br>
-                あなたにも、「本当に話せる韓国語」を最短で手にしてほしい。それが、私がこのコーチングをしている理由です。
+                私自身、かつては何度も挫折しました。<br>遠回りばかりしていた時期もあります。<br>
+                でも、だからこそわかることがある。<br>そして、今なら伝えられることがある。<br><br>
+                あなたにも、<br>
+                「本当に話せる韓国語」
+                を最短で手にしてほしい。<br>それが、私がこのコーチングをしている理由です。
             </p>
 
             <!-- 行動喚起ボタン -->
