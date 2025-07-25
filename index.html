@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>韓国語コーチ ryoya | オンラインレッスンの真実</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Interフォントを適用し、システムフォントにフォールバック */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #212130; /* シックな雰囲気のための、より暗く青みが少ない黒背景 */
+            color: #e0e0e0; /* 明るいテキストカラー */
+        }
+        /* 強調またはTailwindで処理しにくい特定の要素用のカスタムスタイル */
+        .no-gradient-text {
+            /* グラデーションを削除し、単色を使用。より柔らかな青。 */
+            color: #BAD8FF; /* 強調のための柔らかな水色 */
+        }
+        .section-separator {
+            width: 80px;
+            height: 3px;
+            background-color: #f4ff8d; /* アクセントカラー */
+            margin: 2rem auto;
+            border-radius: 9999px;
+        }
+
+        /* clamp() 関数を使用したレスポンシブフォントサイズ */
+        /* ヘッダーのタイトル (韓国語コーチ ryoya) */
+        .text-header-title {
+            font-size: clamp(1.5rem, 4vw, 2.5rem); /* 24px - 40px */
+        }
+        /* メインの見出し (衝撃の真実) */
+        .text-hero-headline {
+            font-size: clamp(2rem, 6vw, 4rem); /* 32px - 64px */
+        }
+        /* ヒーローセクションの大きな段落 (こんにちは！韓国語コーチのryoyaです。) */
+        .text-p-large {
+            font-size: clamp(1rem, 2.5vw, 1.25rem); /* 16px - 20px */
+        }
+        /* ヒーローセクションの中程度の段落とリストアイテム */
+        .text-p-medium {
+            font-size: clamp(0.9rem, 2vw, 1.125rem); /* 14.4px - 18px */
+        }
+        /* ヒーローセクションの強調された段落 (実はそのモヤモヤ) */
+        .text-hero-emphasized {
+            font-size: clamp(1rem, 2.5vw, 1.25rem); /* 16px - 20px */
+        }
+        /* 各理由のセクションタイトル (理由① インプットばかりで「アウトプット」が足りない) */
+        .text-section-title {
+            font-size: clamp(1.75rem, 5vw, 3rem); /* 28px - 48px */
+        }
+        /* 各理由セクションの強調された段落 (受け身の学びでは) */
+        .text-reason-emphasized {
+            font-size: clamp(1rem, 2.5vw, 1.25rem); /* 16px - 20px */
+        }
+        /* ソリューションセクションの見出し (じゃあ、どうすればいいの？) */
+        .text-solution-headline {
+            font-size: clamp(1.75rem, 5vw, 3rem); /* 28px - 48px */
+        }
+        /* ソリューションセクションの結論 (結論はシンプルです。) */
+        .text-solution-conclusion {
+            font-size: clamp(1.25rem, 3vw, 1.5rem); /* 20px - 24px */
+        }
+        /* ソリューションセクションのメインメッセージ (正しい方向で、3ヶ月だけ本気でやること。) */
+        .text-solution-main-message {
+            font-size: clamp(1.5rem, 4.5vw, 2rem); /* 24px - 32px */
+        }
+        /* 行動喚起のテキスト (コーチング無料体験をご希望の方は) */
+        .text-cta-prompt {
+            font-size: clamp(1.25rem, 3vw, 1.5rem); /* 20px - 24px */
+        }
+        /* 行動喚起のボタンテキスト */
+        .text-cta-button {
+            font-size: clamp(1.25rem, 3.5vw, 1.75rem); /* 20px - 28px */
+        }
+        /* フッターテキスト */
+        .text-footer {
+            font-size: clamp(0.75rem, 1.5vw, 1rem); /* 12px - 16px */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- ヘッダーセクション -->
+    <header class="bg-zinc-800 text-white py-4 shadow-lg">
+        <div class="container mx-auto px-4 md:px-8 max-w-4xl flex justify-center items-center">
+            <h1 class="text-header-title font-bold text-center">
+                韓国語コーチ ryoya
+            </h1>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="container mx-auto px-4 md:px-8 max-w-4xl py-12">
+
+        <!-- ヒーロー/イントロダクションセクション -->
+        <section class="text-center mb-16">
+            <h2 class="text-hero-headline font-extrabold mb-6 leading-tight no-gradient-text">
+                【衝撃の真実】<br>オンラインレッスンでは、絶対に韓国語が「話せるようにならない」3つの理由
+            </h2>
+            <p class="text-p-large mb-8">
+                こんにちは！韓国語コーチのryoyaです。
+            </p>
+            <p class="text-p-large mb-8">
+                今回は、多くの学習者が見落としている「オンラインレッスンの落とし穴」についてお話しします。
+            </p>
+            <p class="text-p-medium mb-4">
+                最近は「オンラインで気軽に学べる韓国語レッスン」が増えてきましたよね。
+                でも、こんな風に感じたことはありませんか？
+            </p>
+            <ul class="text-p-medium list-disc list-inside text-left mx-auto max-w-xl space-y-2 mb-8">
+                <li>「なんとなく気になるけど、本当に効果あるのかな？」</li>
+                <li>「受けてみたけど、話せるようになってる気がしない」</li>
+            </ul>
+            <p class="text-p-medium mb-8">
+                そんな不安や違和感を抱えたまま、なんとなく続けていませんか？
+            </p>
+            <p class="text-hero-emphasized font-semibold text-orange-30">
+                実はそのモヤモヤ、あなたのせいではありません。<br>
+                むしろ、多くの人がハマってしまう“構造上の落とし穴”があるんです。
+            </p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- 理由1セクション -->
+        <section class="mb-16 bg-zinc-800 p-8 rounded-lg shadow-xl">
+            <h3 class="text-section-title font-bold mb-6 text-orange-30">
+                理由① インプットばかりで「アウトプット」が足りない
+            </h3>
+            <p class="text-p-medium mb-4">
+                ほとんどのレッスンは、先生の説明を「聞く」時間が中心。
+                つまり、インプットに偏りがちです。
+            </p>
+            <p class="text-p-medium mb-4">
+                でも語学は、自分の口で話して初めて身につくもの。
+                たとえるなら、自転車を本で読むだけでは乗れるようにならないのと同じです。
+            </p>
+            <p class="text-p-medium mb-4 font-semibold">
+                しかも――
+            </p>
+            <p class="text-p-medium mb-6">
+                韓国語を話せるようになるには、約2,000時間が必要。<br>
+                週1回1時間のレッスンだと…数十年かかってしまいます。
+            </p>
+            <p class="text-reason-emphasized font-bold text-red-400">
+                受け身の学びでは、いつまで経っても“話せる実感”は得られません。
+            </p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- 理由2セクション -->
+        <section class="mb-16 bg-zinc-800 p-8 rounded-lg shadow-xl">
+            <h3 class="text-section-title font-bold mb-6 text-orange-30">
+                理由② モチベーションに頼って「習慣化」できない
+            </h3>
+            <p class="text-p-medium mb-4">
+                オンラインレッスンは、「今日は受けたからOK」と満足してしまいがち。
+                でも、本当に大事なのは毎日の学習を“習慣”にすること。
+            </p>
+            <p class="text-p-medium mb-4">
+                やる気がある日だけ勉強する──<br>
+                これでは、ずっと伸び悩んでしまいます。
+            </p>
+            <p class="text-p-medium mb-6">
+                一方で、3ヶ月間だけでも本気で習慣を作ることができれば、<br>
+                その後は、自分の力でグングン伸びていけるようになります。
+            </p>
+            <p class="text-p-medium mb-4 font-semibold">
+                ところが、多くのレッスンには
+            </p>
+            <ul class="text-p-medium list-disc list-inside text-left mx-auto max-w-xl space-y-2 mb-6">
+                <li>学習の習慣化をサポートする仕組みがない</li>
+                <li>挫折しそうなときに相談できる環境がない</li>
+            </ul>
+            <p class="text-reason-emphasized font-bold text-red-400">
+                だから、多くの人が途中でフェードアウトしてしまうのです。
+            </p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- 理由3セクション -->
+        <section class="mb-16 bg-zinc-800 p-8 rounded-lg shadow-xl">
+            <h3 class="text-section-title font-bold mb-6 text-orange-30">
+                理由③ あなただけの「目標」と「戦略」がない
+            </h3>
+            <p class="text-p-medium mb-4">
+                教科書通りにゆっくり進むレッスン…<br>
+                一見丁寧ですが、果たしてそれがあなたにとって最適でしょうか？
+            </p>
+            <p class="text-p-medium mb-4">
+                そもそも、「話せるようになること」はゴールではなく、スタートです。
+            </p>
+            <ul class="text-p-medium list-disc list-inside text-left mx-auto max-w-xl space-y-2 mb-6">
+                <li>韓国旅行をもっと楽しみたい</li>
+                <li>現地で仕入れをしたい</li>
+                <li>推しと話せるようになりたい</li>
+            </ul>
+            <p class="text-p-medium mb-4">
+                目的は人それぞれ。<br>
+                だからこそ、あなた専用の「目標設定」と「学習戦略」が必要なんです。
+            </p>
+            <p class="text-reason-emphasized font-bold text-red-400">
+                レッスンを受けること自体が目的になってしまっていませんか？<br>
+                それでは、いつまで経っても現実は変わりません。
+            </p>
+        </section>
+
+        <div class="section-separator"></div>
+
+        <!-- ソリューション/行動喚起セクション -->
+        <section class="text-center mb-16">
+            <h3 class="text-solution-headline font-bold mb-6 text-orange-30">
+                じゃあ、どうすればいいの？
+            </h3>
+            <p class="text-solution-conclusion font-bold mb-8">
+                結論はシンプルです。
+            </p>
+            <p class="text-solution-main-message font-extrabold text-red-400 mb-8 leading-tight">
+                正しい方向で、<span class="text-red-400">3ヶ月だけ本気でやること。</span>
+            </p>
+            <p class="text-p-medium mb-8">
+                スタート地点や目標は人それぞれでも、<br>
+                この「3ヶ月の集中」ができれば、韓国語は一気に伸びていきます。
+            </p>
+            <p class="text-p-medium mb-8">
+                私自身、かつては何度も挫折しました。独学で伸び悩み、遠回りばかりしていた時期もあります。<br>
+                でも、だからこそわかることがある。そして、今なら伝えられることがある。<br>
+                あなたにも、「本当に話せる韓国語」を最短で手にしてほしい。それが、私がこのコーチングをしている理由です。
+            </p>
+
+            <!-- 行動喚起ボタン -->
+            <div class="mt-12">
+                <p class="text-cta-prompt font-bold mb-6 text-yellow-300">
+                    コーチング無料体験をご希望の方は<br>
+                    LINEで「無料体験」と送信してください
+                </p>
+                
+        </section>
+
+    </main>
+
+    <!-- フッターセクション -->
+    <footer class="bg-zinc-900 text-gray-500 py-6 text-center text-footer">
+        <div class="container mx-auto px-4 md:px-8 max-w-4xl">
+            <p>&copy; 2025 韓国語コーチ ryoya. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
